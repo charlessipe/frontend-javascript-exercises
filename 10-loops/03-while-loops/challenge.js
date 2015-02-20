@@ -1,14 +1,17 @@
 module.exports.stream = function(conditionalFn, actionFn){
-  while (conditionalFn === true){
+  while (conditionalFn() === true){
     actionFn();
-    conditionalFn++''
   }
 };
 
 
-module.exports.sumNumbers = function(array){
-  while(array){
-    return x + ;
-  }
-};
 
+module.exports.sumNumbers = function(arrayOfNumbers){  //take an array of numbers as an argument.
+  var total = 0; 
+  var index = 0;
+  while(index < arrayOfNumbers.length){
+    total += arrayOfNumbers[index];  
+    index ++;
+  }
+  return total;  //return the sum of the numbers.
+};
