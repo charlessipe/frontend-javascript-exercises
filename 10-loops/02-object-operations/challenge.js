@@ -33,17 +33,6 @@ module.exports.hasElems = function(anObject, anArray) {  //take two arguments. T
   return rtnValue;
 };
 
-/*
-    ✓ should be defined 
-    1) returns true for an empty array
-    ✓ returns true if it has all the keys 
-    2) returns false if one or more of the keys isn't in the hash
-
-Complete the hasElems function. This function should:
-
-take two arguments. The first is an object and the second is an array of elements
-return true when all of the elements in the array are keys in the object, false otherwise
-*/
 
 
 
